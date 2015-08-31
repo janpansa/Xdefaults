@@ -1,7 +1,7 @@
 <?php
 /*
  * 
- * Normal Page - Airteam
+ * Sales Page - Airteam
  * 
  */
 ?>
@@ -62,7 +62,25 @@
 <section id="section-contact">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9" ><?php print render($page['content']); ?></div>
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9" >
+                <a id="main-content"></a>
+                <?php print render($title_prefix); ?>
+                <?php if (!empty($title)): ?>
+                  <h1 class="page-header"><?php print $title; ?></h1>
+                <?php endif; ?>
+                <?php print render($title_suffix); ?>
+                <?php print $messages; ?>
+                <?php if (!empty($tabs)): ?>
+                  <?php print render($tabs); ?>
+                <?php endif; ?>
+                <?php if (!empty($page['help'])): ?>
+                  <?php print render($page['help']); ?>
+                <?php endif; ?>
+                <?php if (!empty($action_links)): ?>
+                  <ul class="action-links"><?php print render($action_links); ?></ul>
+                <?php endif; ?>
+                <?php print render($page['content']); ?>
+            </div>
             <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" ><?php print render($page['sidebar_sales']); ?></div>
         </div>
     </div>
