@@ -1,0 +1,93 @@
+#
+# Hierdie file is vir uxvrt terminal. -Gideon
+#
+
+URxvt*transparent: true
+#URxvt.shading: 12
+#URxvt.depth: 32
+
+#URxvt*tintColor: #1e1e1e
+URxvt.letterSpace: 0
+URxvt*saveLines: 12000
+URxvt*foreground: #EFEFFF
+
+URxvt.depth: 32
+URxvt.background: rgba:2c00/3e00/5000/dddd
+URxvt.shading: 40
+URxvt.blurRadius: 10
+
+
+#Xft*dpi: 108
+#URxvt.letterSpace: -1
+#Xft.rgba: none
+#Xft.hintstyle: hintfull
+
+
+Xft.dpi:        108.79
+Xft.antialias:  true
+Xft.rgba:       rgb
+#Xft.hinting:    true
+#Xft.hintstyle:  hintslight
+
+URxvt*font: xft:Terminus:normal:size=11
+URxvt*boldFont: xft:Terminus:bold:size=11
+#URxvt*color0: #3F3F3F
+#URxvt*color1: #dd7162
+#URxvt*color2: #ab5a4f
+#URxvt*color3: #dd7162
+#URxvt*color4: #44566f
+#URxvt*color5: #5F3934
+#URxvt*color6: #dd7162
+#URxvt*color7: #ffd97f
+#URxvt*color8: #dd7162
+#URxvt*color9: #dd7162
+#URxvt*color10: #475e9b
+#URxvt*color11: #475e9b
+#URxvt*color12: #d4908e
+#URxvt*color13: #d4908e
+#URxvt*color14: #DCDCDC
+#URxvt*color15: #8A7079
+URxvt*scrollBar: false
+URxvt*scrollBar_right: true
+URxvt*scrollstyle: plain
+
+! special
+*.foreground:   #c5c8c6
+*.background:   #1d1f21
+*.cursorColor:  #c5c8c6
+
+! black
+*.color0:       #282a2e
+*.color8:       #373b41
+
+! red
+*.color1:       #b24e40
+*.color9:       #dd7162
+
+! green
+*.color2:       #4e7493
+*.color10:      #719dc3
+
+! yellow
+*.color3:       #b24e40
+*.color11:      #dd7162
+
+! blue
+*.color4:       #4e7493
+*.color12:      #719dc3
+
+! magenta
+*.color5:       #4e7493
+*.color13:      #719dc3
+
+! cyan
+*.color6:       #b24e40
+*.color14:      #dd7162
+
+! white
+*.color7:       #707880
+*.color15:      #c5c8c6
+
+#As ek eendag tabs nodig het...
+#URxvt.perl-ext-common: ...,tabbed,...
+URxvt*borderLess: false
